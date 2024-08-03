@@ -1,5 +1,17 @@
 {
-  "rewrites": [
-    {"source": "/(.*)", "destination": "/"}
+  "version": 2,
+  "routes": [
+    {
+      "src": "/",
+      "dest": "/index.html"
+    },
+    {
+      "src": "/portfolio",
+      "dest": "/portfolio.html"
+    },
+    {
+      "src": "/about",
+      "dest": "/about.html"
+    }
   ]
 }
