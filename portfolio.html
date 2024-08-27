@@ -5,50 +5,155 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio</title>
+    <title>Portfólio de Projetos</title>
     <link rel="icon" type="image/x-icon" href="./public/favicon.ico">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
-    <header class="cabecalho">
-        <nav class="cabecalho__menu">
-            <a class="cabecalho__menu__link" href="index.html">Home</a>
-            <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
-            <a class="cabecalho__menu__link" href="portfolio.html">Portfólio</a>
-        </nav>
-    </header>
-    <main class="apresentacao">
-        <section class="apresentacao__conteudo">
-            <h1 class="apresentacao__conteudo__titulo">Currículo</h1>
-            <p class="apresentacao__conteudo__texto">
-                Em construção...
-            </p>
-            <h2 class="apresentacao__conteudo__titulo">Experiências</h2>
-            <p class="apresentacao__conteudo__texto">
-            <div class="apresentacao__conteudo__texto">
-                <ul class="apresentacao__conteudo__texto">
-                    <li>Empresa tal (2020 - 2021) - fazia isso e aquilo </li>
-                    <li>Empresa tal (2021 - 2023) - fazia isso e aquilo </li>
+<header class="cabecalho">
+    <nav class="cabecalho__menu">
+        <a class="cabecalho__menu__link" href="index.html">Home</a>
+        <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
+        <a class="cabecalho__menu__link" href="projects.html">Projetos</a>
+    </nav>
+</header>
+
+<main class="apresentacao">
+    <section class="apresentacao__conteudo">
+        <h1 class="apresentacao__conteudo__titulo">Meus Projetos</h1>
+        <p class="apresentacao__conteudo__texto">
+            Aqui estão alguns dos projetos em que trabalhei. Eles abrangem uma variedade de tecnologias e abordagens, refletindo minha experiência e aprendizado.
+        </p>
+        <h2 class="apresentacao__conteudo__titulo">Projetos em Destaque</h2>
+        <div class="apresentacao__projetos">
+            <div class="projeto">
+                <h3 class="projeto__titulo">LipeLacross - Redes Sociais</h3>
+                <img class="projeto__imagem" src="assets/redes-sociais-lipelacross.jpeg" alt="LipeLacross - Redes Sociais">
+                <p class="projeto__descricao">
+                    Uma página feita com Vue para disponibilizar links de redes sociais. Este projeto visa fornecer um local centralizado onde usuários podem acessar facilmente os links para os perfis de redes sociais.
+                </p>
+                <p class="projeto__funcionalidades">
+                    🔨 Funcionalidades do projeto:
+                <ul>
+                    <li>Visualização de Perfil: Exibe a foto de perfil, nome e profissão.</li>
+                    <li>Links de Redes Sociais: Fornece links para diversas redes sociais, como Instagram, LinkedIn, YouTube e GitHub.</li>
+                    <li>Animações: Inclui animações suaves para elementos ao passar o mouse e durante a renderização inicial.</li>
                 </ul>
+                </p>
+                <p class="projeto__link">
+                    <a href="https://github.com/LipeLacross/Links-Social-Media" target="_blank"><i class="fab fa-github"></i> Repositório GitHub</a>
+                </p>
             </div>
-            </p>
-            <h2 class="apresentacao__conteudo__titulo">Estudos</h2>
-            <div class="apresentacao__conteudo__texto">
-                <ul class="apresentacao__conteudo__texto">
-                    <li>Curso tal <a href="linkdocertificado">com certificado tal</a> </li>
-                    <li>Curso tal <a href="linkdocertificado">com certificado tal</a></li>
-                    <li>Curso tal <a href="linkdocertificado">com certificado tal</a></li>
-                </ul> tal
+            <div class="projeto">
+                <h3 class="projeto__titulo">Sistema de Geração de Certificados</h3>
+                <img class="projeto__imagem" src="assets/Sistema de Geração de Certificados 1.png" alt="Sistema de Geração de Certificados">
+                <p class="projeto__descricao">
+                    Um projeto desenvolvido com Django e SQLite para controle de eventos e geração de certificados. Este sistema é ideal para eventos onde a emissão de certificados para participantes é necessária.
+                </p>
+                <p class="projeto__funcionalidades">
+                    🔨 Funcionalidades do Projeto:
+                <ul>
+                    <li>Controle de Eventos: Gerenciamento de eventos com informações detalhadas.</li>
+                    <li>Geração de Certificados: Criação e armazenamento de certificados personalizados em formato PNG.</li>
+                    <li>Busca de Certificados: Funcionalidade para procurar certificados por e-mail.</li>
+                    <li>Visualização de Certificados: Exibição de certificados gerados para os participantes e administradores.</li>
+                </ul>
+                </p>
+                <p class="projeto__link">
+                    <a href="https://github.com/LipeLacross/PyStackWeek-6.0" target="_blank"><i class="fab fa-github"></i> Repositório GitHub</a>
+                </p>
             </div>
-        </section>
-        <img class="apresentacao__imagem" src="./assets/imagem.png" alt="Foto de Felipe">
-    </main>
-    <button class="scroll-to-top">↑</button>
-    <footer class="rodape">
-        <p>Desenvolvido por Felipe.</p>
-    </footer>
-    <script type="module" src="./main.js"></script>
+            <div class="projeto">
+                <h3 class="projeto__titulo">SuatMB</h3>
+                <img class="projeto__imagem" src="assets/suatmb.jpeg" alt="SuatMB">
+                <p class="projeto__descricao">
+                    O SuaTmb é um projeto de site para calcular a Taxa de Metabolismo Basal (TMB) e ajudar no planejamento de dietas. O site permite aos usuários inserir dados pessoais e informações sobre seu nível de atividade física para calcular suas necessidades calóricas diárias e recomendações nutricionais.
+                </p>
+                <p class="projeto__funcionalidades">
+                    🔨 Funcionalidades do Projeto:
+                <ul>
+                    <li>Cálculo de TMB: Calcula a Taxa de Metabolismo Basal com base em dados como idade, peso, altura e gênero.</li>
+                    <li>Planejamento de Dieta: Oferece recomendações de macronutrientes com base nas necessidades diárias e objetivos de dieta.</li>
+                    <li>Interface Amigável: Formulários e resultados apresentados de maneira clara e intuitiva.</li>
+                    <li>Responsividade: Design adaptável para diferentes tamanhos de tela, incluindo dispositivos móveis.</li>
+                </ul>
+                </p>
+                <p class="projeto__link">
+                    <a href="https://github.com/LipeLacross/SuaTmb-Website" target="_blank"><i class="fab fa-github"></i> Repositório GitHub</a>
+                </p>
+            </div>
+            <div class="projeto">
+                <h3 class="projeto__titulo">DecodificaTudo</h3>
+                <img class="projeto__imagem" src="assets/decodificatudo.jpeg" alt="DecodificaTudo">
+                <p class="projeto__descricao">
+                    Desafio de decodificador web requisitado pelo programa ONE da Oracle.
+                </p>
+                <p class="projeto__funcionalidades">
+                    🔨 Funcionalidades do Projeto:
+                <ul>
+                    <li>Decodificador de texto com opções de criptografia e descriptografia.</li>
+                    <li>Interface responsiva e moderna com animações.</li>
+                    <li>Utilização de Bootstrap e HTML5 Boilerplate para estruturação e estilo.</li>
+                </ul>
+                </p>
+                <p class="projeto__link">
+                    <a href="https://github.com/LipeLacross/Decoder-Challenge" target="_blank"><i class="fab fa-github"></i> Repositório GitHub</a>
+                </p>
+            </div>
+            <div class="projeto">
+                <h3 class="projeto__titulo">Biturytech</h3>
+                <img class="projeto__imagem" src="assets/biturytech.jpeg" alt="Biturytech">
+                <p class="projeto__descricao">
+                    Este projeto é um site para a BituryTech, uma startup de tecnologia que oferece soluções inovadoras e avançadas. Desenvolvido com Next.js e Tailwind CSS, o site proporciona uma experiência moderna e responsiva.
+                </p>
+                <p class="projeto__funcionalidades">
+                    🔨 Funcionalidades do Projeto:
+                <ul>
+                    <li>Navegação: Barra de navegação fixa com links para as principais seções do site.</li>
+                    <li>Seção "Sobre": Apresenta o aplicativo ChronosGram com um vídeo demonstrativo e descrição das suas funcionalidades.</li>
+                    <li>Seção Destaque: Enfatiza a mensagem principal "Nunca mais reprove sem estudar!" com design atraente.</li>
+                    <li>Seção "Home": Detalha a BituryTech, incluindo a missão da empresa e imagem do aplicativo.</li>
+                    <li>Seção "Produtos": Oferece um formulário para captura de e-mails e links para redes sociais.</li>
+                    <li>Rodapé: Informações sobre o desenvolvedor do site.</li>
+                </ul>
+                </p>
+                <p class="projeto__link">
+                    <a href="https://github.com/LipeLacross/Website-Biturytech" target="_blank"><i class="fab fa-github"></i> Repositório GitHub</a>
+                </p>
+            </div>
+            <div class="projeto">
+                <h3 class="projeto__titulo">Bolos da Nilda</h3>
+                <img class="projeto__imagem" src="assets/bolosdanilda.jpeg" alt="Bolos da Nilda">
+                <p class="projeto__descricao">
+                    A "Bolos da Dona Nilda" é um site dedicado à venda de bolos e sucos artesanais. O site apresenta uma interface amigável com uma estrutura simples para navegar pelos produtos, adicionar itens ao carrinho e visualizar o total.
+                </p>
+                <p class="projeto__funcionalidades">
+                    🔨 Funcionalidades do Projeto:
+                <ul>
+                    <li>Exibição de Produtos: Mostra bolos e sucos disponíveis para compra com imagem, descrição e preço.</li>
+                    <li>Carrinho de Compras: Permite aos usuários adicionar produtos ao carrinho e visualizar o total.</li>
+                    <li>Horas de Funcionamento: Exibe as horas de funcionamento da loja no cabeçalho do site.</li>
+                    <li>Responsividade: Layout ajustado para diferentes tamanhos de tela, garantindo uma boa experiência em dispositivos móveis e desktop.</li>
+                </ul>
+                </p>
+                <p class="projeto__link">
+                    <a href="https://github.com/LipeLacross/Cake-Shop" target="_blank"><i class="fab fa-github"></i> Repositório GitHub</a>
+                </p>
+            </div>
+        </div>
+    </section>
+    <img class="apresentacao__imagem" src="assets/profile.png" alt="Foto de Felipe">
+</main>
+
+<button class="scroll-to-top">↑</button>
+
+<footer class="rodape">
+    <p>&copy; 2024 Felipe Moreira Rios. Todos os direitos reservados</p>
+</footer>
+
+<script type="module" src="./main.js"></script>
 </body>
 
 </html>
