@@ -236,7 +236,7 @@ body {
 .projeto {
   color: var(--cor-primaria);
   background-color: var(--cor-secundaria);
-  padding: 2rem;
+  padding: 1.5rem;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -247,6 +247,8 @@ body {
   font-family: var(--fonte-secundaria);
   height: 100%; /* Garante que o projeto ocupe a altura completa do contêiner */
   box-sizing: border-box; /* Inclui padding e border no cálculo da largura e altura */
+  width: 25rem;
+  margin: 5rem 0rem auto;
 }
 
 .projeto:hover {
@@ -257,7 +259,6 @@ body {
 .projeto__imagem {
   width: 100%;
   max-height: 200px;
-  object-fit: cover;
   border-radius: 8px;
   margin-bottom: 1rem;
 }
@@ -363,6 +364,16 @@ body {
   .apresentacao__imagem {
     align-self: flex-start;
   }
+
+  .apresentacao__projetos {
+    grid-template-columns: repeat(2, minmax(300px, 1fr)); /* Dois projetos por linha com largura mínima */
+    gap: 15rem; /* Espaçamento entre projetos */
+    padding: 1rem 5rem; /* Padding da seção de projetos */
+  }
+}
+
+.projeto {
+
 }
 
 @media (max-width: 1200px) {
@@ -396,9 +407,40 @@ body {
     width: 60%;
     padding: 0% 0% 5% 0%;
   }
+
+  .apresentacao__projetos {
+    grid-template-columns: repeat(2, 1fr); /* Dois projetos por linha */
+    padding: 1rem; /* Ajusta o padding para dispositivos menores */
+  }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 900px) {
+  .apresentacao__projetos {
+    grid-template-columns: repeat(1, 1fr); /* Um projeto por linha */
+    padding: 0.5rem; /* Ajusta o padding para dispositivos menores */
+  }
+
+  .projeto {
+    max-width: 100%; /* Permite que o projeto use toda a largura disponível */
+    margin: 1rem 0; /* Ajusta a margem para melhorar a exibição */
+    padding: 1rem; /* Ajusta o padding para dispositivos menores */
+  }
+
+  .projeto__imagem {
+    max-height: 150px; /* Reduz a altura máxima da imagem */
+  }
+
+  .projeto__titulo {
+    font-size: 1.4rem; /* Ajusta o tamanho da fonte para telas menores */
+  }
+
+  .projeto__descricao,
+  .projeto__funcionalidades {
+    font-size: 1rem; /* Ajusta o tamanho da fonte para telas menores */
+  }
+}
+
+@media (max-width: 600px) {
   .apresentacao__imagem {
     width: 80%;
   }
@@ -413,5 +455,18 @@ body {
 
   .apresentacao__conteudo__texto ul {
     padding: 1rem;
+  }
+
+  .projeto__titulo {
+    font-size: 1.2rem; /* Ajusta o tamanho da fonte para telas menores */
+  }
+
+  .projeto__descricao,
+  .projeto__funcionalidades {
+    font-size: 0.9rem; /* Ajusta o tamanho da fonte para telas menores */
+  }
+
+  .projeto__imagem {
+    max-height: 120px; /* Reduz ainda mais a altura máxima da imagem */
   }
 }
