@@ -1,3 +1,5 @@
+## 🌐 [English Version of README](README_EN.md)
+
 # Meu Portfólio
 
 Uma página de portfólio pessoal desenvolvida com Vite, HTML, CSS e JavaScript. Este projeto visa exibir minhas habilidades, experiências e fornecer links para minhas redes sociais.
